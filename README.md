@@ -31,13 +31,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-flatten2d/tags). For example,
+
+```javascript
 import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@v0.0.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@v0.0.1-deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@deno/mod.js';
 ```
 
 #### flatten2d( x, shape, colexicographic )
@@ -101,7 +106,7 @@ y = flatten2d.assign( x, [ 2, 2 ], true, out, 1, 0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@v0.0.1-deno/mod.js';
+import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@deno/mod.js';
 
 var x = [
     [ 1, 2, 3, 4 ],
