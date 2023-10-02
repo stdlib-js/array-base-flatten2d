@@ -35,25 +35,30 @@ limitations under the License.
 
 > Flatten a two-dimensional nested array.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-flatten2d
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-flatten2d/tags). For example,
-
-```javascript
-import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@v0.1.0-esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@esm/index.mjs';
+var flatten2d = require( '@stdlib/array-base-flatten2d' );
 ```
 
 #### flatten2d( x, shape, colexicographic )
@@ -81,7 +86,7 @@ var out = flatten2d( x, [ 2, 2 ], true );
 Flattens a two-dimensional nested array and assigns elements to a provided output array.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = [ [ 1, 2 ], [ 3, 4 ] ];
 var out = new Float64Array( 4 );
@@ -116,13 +121,8 @@ y = flatten2d.assign( x, [ 2, 2 ], true, out, 1, 0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@esm/index.mjs';
+```javascript
+var flatten2d = require( '@stdlib/array-base-flatten2d' );
 
 var x = [
     [ 1, 2, 3, 4 ],
@@ -160,10 +160,6 @@ out = flatten2d( x, [ 4, 4 ], false );
 
 out = flatten2d( x, [ 4, 4 ], true );
 // returns [ 1, 5, 9, 13, 2, 6, 10, 14, 3, 7, 11, 15, 4, 8, 12, 16 ]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -187,7 +183,7 @@ out = flatten2d( x, [ 4, 4 ], true );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -217,8 +213,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-flatten2d.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-base-flatten2d
 
-[test-image]: https://github.com/stdlib-js/array-base-flatten2d/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/array-base-flatten2d/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/array-base-flatten2d/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-base-flatten2d/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-flatten2d/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-base-flatten2d?branch=main
