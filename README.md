@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@deno/mod.js';
+import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@v0.2.3-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@v0.2.3-deno/mod.js';
 ```
 
 #### flatten2d( x, shape, colexicographic )
@@ -112,7 +112,7 @@ y = flatten2d.assign( x, [ 2, 2 ], true, out, 1, 0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@deno/mod.js';
+import flatten2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d@v0.2.3-deno/mod.js';
 
 var x = [
     [ 1, 2, 3, 4 ],
